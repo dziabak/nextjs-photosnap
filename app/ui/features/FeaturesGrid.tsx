@@ -1,4 +1,4 @@
-import { FEATURES_DATA } from "../../utils/data";
+import { FEATURES_DATA } from "@/app/lib/data";
 import FeatureCard from "./FeatureCard";
 
 const FeaturesGrid = () => {

@@ -1,4 +1,4 @@
-import Logo from "../Navigation/Logo";
+import Logo from "../navigation/Logo";
 import FooterLeftPanel from "./FooterLeftPanel";
 import FooterLink from "./FooterLink";
 import SocialMediaLink from "./SocialMediaLink";

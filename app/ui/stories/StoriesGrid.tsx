@@ -1,4 +1,4 @@
-import { STORIES_DATA } from "../../utils/data";
+import { STORIES_DATA } from "@/app/lib/data";
 import StoryCard from "./StoryCard";
 
 const StoriesGrid = () => {

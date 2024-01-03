@@ -1,4 +1,4 @@
-import { PRICE_CARDS_DATA } from "../../utils/data";
+import { PRICE_CARDS_DATA } from "@/app/lib/data";
 import PriceCard from "./PriceCard";
 
 const PriceCardsGrid = () => {
