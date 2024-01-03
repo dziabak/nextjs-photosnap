@@ -27,7 +27,7 @@ const StoriesHeader = ({
 
 			<div className="px-16 py-16 space-y-4 pb-14 bg-c-black text-c-white md:w-2/3 lg:w-2/5 md:hidden">
 				<p className="text-sm font-bold tracking-widest uppercase ">
-					Last month's featured story
+					Last month&apos;s featured story
 				</p>
 				<p className="text-4xl font-bold tracking-widest uppercase">{title}</p>
 				<p className="space-x-2 text-sm">
@@ -52,7 +52,7 @@ const StoriesHeader = ({
 			<div className="bottom-0 hidden w-2/3 h-full p-8 space-y-8 md:flex md:flex-col md:justify-center md:absolute text-c-white lg:px-16 lg:w-1/2">
 				<div className="pb-4 space-y-8">
 					<p className="text-sm font-bold tracking-widest uppercase ">
-						Last month's featured story
+						Last month&apos;s featured story
 					</p>
 					<p className="text-4xl font-bold tracking-widest uppercase">
 						{title}
