@@ -139,7 +139,7 @@ export const STORIES_DATA = [
 		alt: "An unusually formed mountain (Half Dome) covered in snow during a night",
 	},
 	{
-		title: "Somwarpet’s Beauty",
+		title: "Somwarpet's Beauty",
 		author: "Michelle",
 		date: "March 1st 2020",
 		link: "XXX",
@@ -163,7 +163,7 @@ export const FEATURES_DATA = [
 		icon: "./assets/features/desktop/responsive.svg",
 		alt: "Icon showing phone, tablet and laptop",
 		title: "100% Responsive",
-		description: `No matter which the device you’re on, our site is fully responsive and stories
+		description: `No matter which the device you're on, our site is fully responsive and stories
 	look beautiful on any screen.`,
 	},
 	{
@@ -225,7 +225,7 @@ export const PRICING_HEADER_DATA = [
 		title: "Pricing",
 		description: `Create a your stories, Photosnap is a platform for photographers and visual
 		storytellers.
-		It’s the simple way to create and share your photos.`,
+		It's the simple way to create and share your photos.`,
 	},
 ];
 
