@@ -1,5 +1,4 @@
 import { FEATURES_HEADER_DATA } from "../lib/data";
-import { BETA_INVITE_DATA } from "../lib/data";
 import PageHeader from "../ui/shared/PageHeader";
 import FeaturesGrid from "../ui/features/FeaturesGrid";
 import BetaInvite from "../ui/shared/BetaInvite";
@@ -20,17 +19,7 @@ const FeaturesPage = () => {
 				/>
 			))}
 			<FeaturesGrid />
-			{BETA_INVITE_DATA.map((item) => (
-				<BetaInvite
-					alt={item.alt}
-					linkText={item.linkText}
-					mainText={item.mainText}
-					mobileImage={item.mobileImage}
-					tabletImage={item.tabletImage}
-					desktopImage={item.desktopImage}
-					key={item.mainText}
-				/>
-			))}
+			<BetaInvite />
 		</div>
 	);
 };

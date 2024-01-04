@@ -229,16 +229,14 @@ export const PRICING_HEADER_DATA = [
 	},
 ];
 
-export const BETA_INVITE_DATA = [
-	{
-		mobileImage: "./assets/shared/mobile/bg-beta.jpg",
-		tabletImage: "./assets/shared/tablet/bg-beta.jpg",
-		desktopImage: "./assets/shared/desktop/bg-beta.jpg",
-		alt: "A sandstone valley",
-		mainText: "We're in Beta. Get your invite today!",
-		linkText: `Get an invite `,
-	},
-];
+export const BETA_INVITE_DATA = {
+	mobileImage: "./assets/shared/mobile/bg-beta.jpg",
+	tabletImage: "./assets/shared/tablet/bg-beta.jpg",
+	desktopImage: "./assets/shared/desktop/bg-beta.jpg",
+	alt: "A sandstone valley",
+	mainText: "We're in Beta. Get your invite today!",
+	linkText: `Get an invite `,
+};
 
 export const PRICE_CARDS_DATA = [
 	{

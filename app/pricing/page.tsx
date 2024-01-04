@@ -1,5 +1,4 @@
-import { PRICING_HEADER_DATA } from "../lib/data";
-import { BETA_INVITE_DATA } from "../lib/data";
+import { PRICING_HEADER_DATA } from "@/app/lib/data";
 import PageHeader from "../ui/shared/PageHeader";
 import PriceCardsGrid from "../ui/pricing/PriceCardsGrid";
 import PriceTable from "../ui/pricing/PriceTable";
@@ -21,17 +20,7 @@ const PricingPage = () => {
 			))}
 			<PriceCardsGrid />
 			<PriceTable />
-			{BETA_INVITE_DATA.map((item) => (
-				<BetaInvite
-					alt={item.alt}
-					linkText={item.linkText}
-					mainText={item.mainText}
-					mobileImage={item.mobileImage}
-					tabletImage={item.tabletImage}
-					desktopImage={item.desktopImage}
-					key={item.mainText}
-				/>
-			))}
+			<BetaInvite />
 		</div>
 	);
 };
