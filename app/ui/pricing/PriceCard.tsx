@@ -37,9 +37,11 @@ const PriceCard = ({
 			<a
 				href="#"
 				className={clsx(
-					"w-full p-3 font-bold tracking-widest text-center uppercase transition-colors bg-c-black text-c-white md:w-1/2 lg:w-full hover:bg-c-grey-2 hover:text-c-black",
+					"w-full p-3 font-bold tracking-widest text-center uppercase transition-colors  md:w-1/2 lg:w-full ",
 					layoutIsHighlighted &&
-						"bg-c-grey text-c-black hover:bg-c-grey-2 hover:text-c-black"
+						"bg-c-grey text-c-black hover:bg-c-grey-2 hover:text-c-black",
+					!layoutIsHighlighted &&
+						"bg-c-black text-c-white hover:bg-c-grey-2 hover:text-c-black"
 				)}>
 				Pick Plan
 			</a>
