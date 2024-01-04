@@ -1,19 +1,26 @@
+"use client";
+
+import { useState } from "react";
 import clsx from "clsx";
 
 const PriceCard = ({
 	title,
 	description,
-	price,
-	// priceYearly,
-	periodFlag,
+	priceMonthly,
+	priceYearly,
+	tagMonthly,
+	tagYearly,
 	layoutIsHighlighted,
+	isPriceYearly,
 }: {
 	title: string;
 	description: string;
-	price: string;
+	priceMonthly: string;
 	priceYearly?: string;
-	periodFlag?: boolean;
+	tagMonthly: string;
+	tagYearly: string;
 	layoutIsHighlighted: boolean;
+	isPriceYearly: boolean;
 }) => {
 	return (
 		<div
@@ -28,10 +35,16 @@ const PriceCard = ({
 					<p className="opacity-60">{description}</p>
 				</div>
 				<div className="md:text-right lg:text-center">
-					<p className="[ price-label-basic ] text-4xl font-bold md:text-5xl">
-						${price}
-					</p>
-					<p className="opacity-60">{periodFlag}</p>
+					{!isPriceYearly ? (
+						<p className="text-4xl font-bold md:text-5xl">${priceMonthly}</p>
+					) : (
+						<p className="text-4xl font-bold md:text-5xl">${priceYearly}</p>
+					)}
+					{!isPriceYearly ? (
+						<p className="opacity-60">{tagMonthly}</p>
+					) : (
+						<p className="opacity-60">{tagYearly}</p>
+					)}
 				</div>
 			</div>
 			<a

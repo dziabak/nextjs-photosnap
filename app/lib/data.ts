@@ -243,24 +243,30 @@ export const PRICE_CARDS_DATA = [
 		title: "Basic",
 		description: `Includes basic usage of our platform. Recommended for new and aspiring
 		photographers.`,
-		price: "19.00",
+		priceMonthly: "19.00",
 		priceYearly: "190.00",
+		tagMonthly: "per month",
+		tagYearly: "per year",
 		layoutIsHighlighted: false,
 	},
 	{
 		title: "Pro",
 		description: `More advanced features available. Recommended for photography veterans and
 		professionals`,
-		price: "39.00",
+		priceMonthly: "39.00",
 		priceYearly: "390.00",
+		tagMonthly: "per month",
+		tagYearly: "per year",
 		layoutIsHighlighted: true,
 	},
 	{
 		title: "Business",
 		description: `Additional features available such as more detailed metrics. Recommended for
 		business owners.`,
-		price: "99.00",
+		priceMonthly: "99.00",
 		priceYearly: "990.00",
+		tagMonthly: "per month",
+		tagYearly: "per year",
 		layoutIsHighlighted: false,
 	},
 ];
