@@ -33,7 +33,6 @@ const PriceCardsGrid = () => {
 						isPriceYearly={isPriceYearly}
 					/>
 				))}
-				P
 			</div>
 		</div>
 	);

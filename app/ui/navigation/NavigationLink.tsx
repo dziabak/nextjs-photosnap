@@ -1,8 +1,19 @@
 import Link from "next/link";
 
-const NavigationLink = ({ link, text }: { link: string; text: string }) => {
+const NavigationLink = ({
+	link,
+	text,
+	onClick,
+}: {
+	link: string;
+	text: string;
+	onClick: () => void;
+}) => {
 	return (
-		<Link href={link} className="p-3 transition-opacity hover:opacity-30">
+		<Link
+			href={link}
+			className="p-3 transition-opacity hover:opacity-30"
+			onClick={() => onClick()}>
 			{text}
 		</Link>
 	);
