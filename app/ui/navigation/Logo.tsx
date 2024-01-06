@@ -1,8 +1,10 @@
+"use client"
+
 import Link from "next/link";
 
-const Logo = () => {
+const Logo = ({ onClick }: { onClick: () => void }) => {
 	return (
-		<Link href="/">
+		<Link href="/" onClick={() => onClick()}>
 			<svg xmlns="http://www.w3.org/2000/svg" width="170" height="16">
 				<defs>
 					<linearGradient id="a" x1="0%" x2="50%" y1="85.457%" y2="14.543%">

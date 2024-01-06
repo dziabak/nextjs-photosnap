@@ -3,7 +3,7 @@ import React from "react";
 import NavigationLink from "./NavigationLink";
 import InviteButton from "../ui/InviteButton";
 
-const NavigationMobile = ({ onClick }: { onClick: () => void }) => {
+const NavigationMobile = ({ onNavigationLinkClick }: { onNavigationLinkClick: () => void }) => {
 	return (
 		<div className="absolute top-[72px] left-0 w-full md:hidden z-10">
 			<div className="relative flex flex-col px-16 py-8 bg-c-white">
@@ -11,17 +11,17 @@ const NavigationMobile = ({ onClick }: { onClick: () => void }) => {
 					<NavigationLink
 						link="/stories"
 						text="Stories"
-						onClick={() => onClick()}
+						onClick={() => onNavigationLinkClick()}
 					/>
 					<NavigationLink
 						link="/features"
 						text="Features"
-						onClick={() => onClick()}
+						onClick={() => onNavigationLinkClick()}
 					/>
 					<NavigationLink
 						link="/pricing"
 						text="Pricing"
-						onClick={() => onClick()}
+						onClick={() => onNavigationLinkClick()}
 					/>
 				</div>
 				<InviteButton />
