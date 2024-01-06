@@ -331,3 +331,10 @@ export const HOME_HEADER_DATA = [
 		layoutWhite: true,
 	},
 ];
+
+export const FOOTER_LINKS_DATA = [
+	{ link: "/", title: "Home" },
+	{ link: "/stories", title: "Stories" },
+	{ link: "/features", title: "Features" },
+	{ link: "/pricing", title: "Pricing" },
+];

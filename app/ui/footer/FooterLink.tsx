@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-const FooterLink = ({ link, text }: { link: string; text: string }) => {
+const FooterLink = ({ link, title }: { link: string; title: string }) => {
 	return (
-		<Link href={link} className="p-2 pt-0 transition-opacity hover:opacity-30">
-			{text}
+		<Link href={link} className="transition-opacity hover:opacity-30">
+			{title}
 		</Link>
 	);
 };
