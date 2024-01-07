@@ -33,7 +33,7 @@ const HomeHeader = ({
 		<div
 			className={clsx(
 				"flex flex-col md:flex-row",
-				layoutMirrored && "md:flex-row-reverse"
+				!layoutMirrored && "md:flex-row-reverse"
 			)}>
 			<picture>
 				<source srcSet={imageDesktop} media="(min-width: 1024px)" />
