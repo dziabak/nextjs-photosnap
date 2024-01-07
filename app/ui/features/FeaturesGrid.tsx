@@ -3,7 +3,7 @@ import FeatureCard from "./FeatureCard";
 
 const FeaturesGrid = () => {
 	return (
-		<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+		<section className="grid grid-cols-1 my-24 md:grid-cols-2 lg:grid-cols-3">
 			{FEATURES_DATA.map((item) => (
 				<FeatureCard
 					alt={item.alt}
