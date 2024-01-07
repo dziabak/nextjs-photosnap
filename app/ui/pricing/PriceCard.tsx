@@ -25,7 +25,7 @@ const PriceCard = ({
 	layoutIsHighlighted: boolean;
 	isPriceYearly: boolean;
 }) => {
-	let link;
+	let link: string;
 	const linkConstructor: string = !isPriceYearly
 		? (link = linkMonthly)
 		: (link = linkYearly);
