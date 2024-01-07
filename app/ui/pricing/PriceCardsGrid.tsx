@@ -19,7 +19,7 @@ const PriceCardsGrid = () => {
 				onChange={priceToggleHandler}
 				isPriceYearly={isPriceYearly}
 			/>
-			<div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+			<div className="grid grid-cols-1 gap-8 my-16 lg:grid-cols-3">
 				{PRICE_CARDS_DATA.map((item) => (
 					<PriceCard
 						description={item.description}
@@ -33,6 +33,7 @@ const PriceCardsGrid = () => {
 						key={item.title}
 						layoutIsHighlighted={item.layoutIsHighlighted}
 						isPriceYearly={isPriceYearly}
+						layoutHasOrnament={item.layoutHasOrnament}
 					/>
 				))}
 			</div>

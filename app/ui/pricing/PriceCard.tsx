@@ -13,6 +13,7 @@ const PriceCard = ({
 	tagYearly,
 	layoutIsHighlighted,
 	isPriceYearly,
+	layoutHasOrnament,
 }: {
 	title: string;
 	description: string;
@@ -24,6 +25,7 @@ const PriceCard = ({
 	tagYearly: string;
 	layoutIsHighlighted: boolean;
 	isPriceYearly: boolean;
+	layoutHasOrnament: boolean;
 }) => {
 	let link: string;
 	const linkConstructor: string = !isPriceYearly
@@ -33,10 +35,13 @@ const PriceCard = ({
 	return (
 		<div
 			className={clsx(
-				"flex flex-col justify-between p-12 space-y-12 text-center  md:text-left lg:text-center",
+				"relative flex flex-col justify-between p-12 space-y-12 text-center  md:text-left lg:text-center",
 				!layoutIsHighlighted && "bg-c-grey",
 				layoutIsHighlighted && "bg-c-black text-c-white lg:-my-8 lg:py-20"
 			)}>
+			{layoutHasOrnament && (
+				<div className="absolute top-0 left-0 h-[6px] w-full bg-gradient-to-tr from-[#FFC593] from-10% via-[#BC7198] via-40% to-[#5A77FF] to-80%"></div>
+			)}
 			<div className="space-y-12 md:flex md:justify-between md:space-y-0 lg:flex-col lg:space-y-12 lg:h-full">
 				<div className="space-y-4 md:w-1/2 lg:w-full">
 					<p className="text-2xl font-bold">{title}</p>

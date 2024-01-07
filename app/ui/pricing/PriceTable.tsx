@@ -4,7 +4,7 @@ import PriceTableItem from "./PriceTableItem";
 
 const PriceTable = () => {
 	return (
-		<section className="p-8 mt-16 mb-32 2xl:px-32">
+		<section className="p-8 mt-16 mb-32 2xl:px-32 md:mt-32">
 			<p className="hidden mb-8 text-4xl font-bold tracking-widest text-center uppercase md:block">
 				Compare
 			</p>

@@ -14,7 +14,7 @@ const PriceToggle = ({
 	};
 
 	return (
-		<div className="flex items-center justify-center mt-16 mb-8 space-x-8 lg:mb-16">
+		<div className="flex items-center justify-center mt-16 mb-8 space-x-8 lg:mb-20 lg:mt-24">
 			<label
 				htmlFor="price"
 				className={clsx(

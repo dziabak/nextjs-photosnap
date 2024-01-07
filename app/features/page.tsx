@@ -6,7 +6,6 @@ import BetaInvite from "../ui/shared/BetaInvite";
 const FeaturesPage = () => {
 	return (
 		<div>
-			{" "}
 			{FEATURES_HEADER_DATA.map((item) => (
 				<PageHeader
 					key={item.title}

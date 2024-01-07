@@ -250,6 +250,7 @@ export const PRICE_CARDS_DATA = [
 		tagMonthly: "per month",
 		tagYearly: "per year",
 		layoutIsHighlighted: false,
+		layoutHasOrnament: false
 	},
 	{
 		title: "Pro",
@@ -262,6 +263,7 @@ export const PRICE_CARDS_DATA = [
 		tagMonthly: "per month",
 		tagYearly: "per year",
 		layoutIsHighlighted: true,
+		layoutHasOrnament: true,
 	},
 	{
 		title: "Business",
@@ -274,6 +276,7 @@ export const PRICE_CARDS_DATA = [
 		tagMonthly: "per month",
 		tagYearly: "per year",
 		layoutIsHighlighted: false,
+		layoutHasOrnament: false
 	},
 ];
 
