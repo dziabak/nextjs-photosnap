@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useLockedBody } from "usehooks-ts";
 
 import Logo from "./Logo";
 import InviteButton from "../ui/InviteButton";
@@ -21,6 +22,8 @@ const Navigation = () => {
 	const closeMobileNavigation = () => {
 		setIsNavigationMobileOpened(false);
 	};
+
+	useLockedBody(isNavigationMobileOpened, "root");
 
 	return (
 		<nav>
