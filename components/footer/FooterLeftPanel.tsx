@@ -15,7 +15,9 @@ const FooterLeftPanel = () => {
 					</svg>
 				</span>
 			</a>
-			<p className="text-sm opacity-50">Copyright 2019. All Rights Reserved</p>
+			<p className="text-sm opacity-50">
+				Copyright {new Date().getFullYear()}. All Rights Reserved
+			</p>
 		</div>
 	);
 };
