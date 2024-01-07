@@ -1,6 +1,13 @@
+import { Metadata } from "next";
+
 import { STORIES_HEADER_DATA } from "../../lib/data";
 import StoriesHeader from "../../components/stories/StoriesHeader";
 import StoriesGrid from "../../components/stories/StoriesGrid";
+
+export const metadata: Metadata = {
+	title: "Stories | Photosnap",
+	description: "Stories page for Photosnap services.",
+};
 
 const StoriesPage = () => {
 	return (

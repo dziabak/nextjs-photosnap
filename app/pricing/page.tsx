@@ -1,8 +1,15 @@
+import { Metadata } from "next";
+
 import { PRICING_HEADER_DATA } from "@/lib/data";
 import PageHeader from "../../components/shared/PageHeader";
 import PriceCardsGrid from "../../components/pricing/PriceCardsGrid";
 import PriceTable from "../../components/pricing/PriceTable";
 import BetaInvite from "../../components/shared/BetaInvite";
+
+export const metadata: Metadata = {
+	title: "Pricing | Photosnap",
+	description: "Pricing page for Photosnap services.",
+};
 
 const PricingPage = () => {
 	return (
