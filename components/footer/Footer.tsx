@@ -1,4 +1,4 @@
-import { FOOTER_LINKS_DATA } from "@/app/lib/data";
+import { FOOTER_LINKS_DATA } from "@/lib/data";
 
 import FooterLogo from "./FooterLogo";
 import FooterLeftPanel from "./FooterLeftPanel";

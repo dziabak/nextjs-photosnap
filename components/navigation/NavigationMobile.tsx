@@ -1,9 +1,13 @@
 import React from "react";
 
 import NavigationLink from "./NavigationLink";
-import InviteButton from "../ui/InviteButton";
+import InviteButton from "./InviteButton";
 
-const NavigationMobile = ({ onNavigationLinkClick }: { onNavigationLinkClick: () => void }) => {
+const NavigationMobile = ({
+	onNavigationLinkClick,
+}: {
+	onNavigationLinkClick: () => void;
+}) => {
 	return (
 		<div className="absolute top-[72px] left-0 w-full md:hidden z-10">
 			<div className="relative flex flex-col px-16 py-8 bg-c-white">

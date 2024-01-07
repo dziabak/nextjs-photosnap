@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { PRICE_CARDS_DATA } from "@/app/lib/data";
+import { PRICE_CARDS_DATA } from "@/lib/data";
 import PriceCard from "./PriceCard";
 import PriceToggle from "./PriceToggle";
 

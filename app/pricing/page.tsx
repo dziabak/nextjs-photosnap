@@ -1,8 +1,8 @@
-import { PRICING_HEADER_DATA } from "@/app/lib/data";
-import PageHeader from "../ui/shared/PageHeader";
-import PriceCardsGrid from "../ui/pricing/PriceCardsGrid";
-import PriceTable from "../ui/pricing/PriceTable";
-import BetaInvite from "../ui/shared/BetaInvite";
+import { PRICING_HEADER_DATA } from "@/lib/data";
+import PageHeader from "../../components/shared/PageHeader";
+import PriceCardsGrid from "../../components/pricing/PriceCardsGrid";
+import PriceTable from "../../components/pricing/PriceTable";
+import BetaInvite from "../../components/shared/BetaInvite";
 
 const PricingPage = () => {
 	return (

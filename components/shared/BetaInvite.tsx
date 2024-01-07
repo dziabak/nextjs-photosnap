@@ -1,4 +1,4 @@
-import { BETA_INVITE_DATA } from "@/app/lib/data";
+import { BETA_INVITE_DATA } from "@/lib/data";
 
 const data = BETA_INVITE_DATA;
 

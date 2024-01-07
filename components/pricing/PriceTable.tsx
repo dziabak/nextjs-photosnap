@@ -1,4 +1,4 @@
-import { PRICE_TABLE_DATA } from "@/app/lib/data";
+import { PRICE_TABLE_DATA } from "@/lib/data";
 import PriceTableHeader from "./PriceTableHeader";
 import PriceTableItem from "./PriceTableItem";
 

@@ -1,6 +1,6 @@
-import HomeHeaderGrid from "./ui/home/HomeHeaderGrid";
-import HomeStoriesGrid from "./ui/home/HomeStoriesGrid";
-import HomeFeaturesGrid from "./ui/home/HomeFeaturesGrid";
+import HomeHeaderGrid from "../components/home/HomeHeaderGrid";
+import HomeStoriesGrid from "../components/home/HomeStoriesGrid";
+import HomeFeaturesGrid from "../components/home/HomeFeaturesGrid";
 
 export default function Home() {
 	return (

@@ -1,7 +1,7 @@
-import { FEATURES_HEADER_DATA } from "../lib/data";
-import PageHeader from "../ui/shared/PageHeader";
-import FeaturesGrid from "../ui/features/FeaturesGrid";
-import BetaInvite from "../ui/shared/BetaInvite";
+import { FEATURES_HEADER_DATA } from "../../lib/data";
+import PageHeader from "../../components/shared/PageHeader";
+import FeaturesGrid from "../../components/features/FeaturesGrid";
+import BetaInvite from "../../components/shared/BetaInvite";
 
 const FeaturesPage = () => {
 	return (

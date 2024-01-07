@@ -1,4 +1,4 @@
-import { HOME_HEADER_DATA } from "@/app/lib/data";
+import { HOME_HEADER_DATA } from "@/lib/data";
 import HomeHeader from "./HomeHeader";
 
 const HomeHeaderGrid = () => {

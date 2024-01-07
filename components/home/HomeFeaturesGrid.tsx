@@ -1,4 +1,4 @@
-import { FEATURES_DATA } from "@/app/lib/data";
+import { FEATURES_DATA } from "@/lib/data";
 import FeatureCard from "../features/FeatureCard";
 
 const HOME_FEATURES_DATA = FEATURES_DATA.slice(0, 3);

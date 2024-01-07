@@ -1,6 +1,6 @@
-import { STORIES_HEADER_DATA } from "../lib/data";
-import StoriesHeader from "../ui/stories/StoriesHeader";
-import StoriesGrid from "../ui/stories/StoriesGrid";
+import { STORIES_HEADER_DATA } from "../../lib/data";
+import StoriesHeader from "../../components/stories/StoriesHeader";
+import StoriesGrid from "../../components/stories/StoriesGrid";
 
 const StoriesPage = () => {
 	return (
