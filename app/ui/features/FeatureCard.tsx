@@ -10,7 +10,7 @@ const FeatureCard = ({
 	description: string;
 }) => {
 	return (
-		<div className="lg:h-[350px] flex flex-col items-center p-8 px-24 md:px-48 lg:px-8 space-y-8">
+		<div className="lg:h-[350px] flex flex-col items-center p-8 px-24 md:px-16 lg:px-8 space-y-8">
 			<div className="h-[72px] flex items-center">
 				<img src={icon} alt={alt} />
 			</div>
