@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={`${dm_sans.className} container`}>
+			<body className={`${dm_sans.className} container min-h-screen flex flex-col justify-between`}>
 				<Navigation />
 				{children}
 				<Footer />
