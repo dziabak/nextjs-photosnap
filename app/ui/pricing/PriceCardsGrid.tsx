@@ -23,6 +23,8 @@ const PriceCardsGrid = () => {
 				{PRICE_CARDS_DATA.map((item) => (
 					<PriceCard
 						description={item.description}
+						linkMonthly={item.linkMonthly}
+						linkYearly={item.linkYearly}
 						priceMonthly={item.priceMonthly}
 						priceYearly={item.priceYearly}
 						tagMonthly={item.tagMonthly}

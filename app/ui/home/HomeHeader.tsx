@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import Link from "next/link";
 import HomeArrowIcon from "./HomeArrowIcon";
 
 const HomeHeader = ({
@@ -9,6 +10,7 @@ const HomeHeader = ({
 	title,
 	description,
 	linkText,
+	isRouterLink,
 	linkURL,
 	layoutMirrored,
 	layoutHasOrnament,
@@ -21,6 +23,7 @@ const HomeHeader = ({
 	title: string;
 	description: string;
 	linkText: string;
+	isRouterLink: boolean;
 	linkURL: string;
 	layoutMirrored: boolean;
 	layoutHasOrnament: boolean;
@@ -63,20 +66,39 @@ const HomeHeader = ({
 					)}>
 					{description}
 				</p>
-				<a
-					href={linkURL}
-					className="flex items-center py-4 space-x-6 text-xs font-bold tracking-widest uppercase group">
-					<span
-						className={clsx(
-							"group-hover:underline",
-							layoutWhite && "text-c-black"
-						)}>
-						{linkText}
-					</span>
-					<span className="inline-block">
-						<HomeArrowIcon color={!layoutWhite} />
-					</span>
-				</a>
+				{isRouterLink ? (
+					<Link
+						href={linkURL}
+						className="flex items-center py-4 space-x-6 text-xs font-bold tracking-widest uppercase group">
+						<span
+							className={clsx(
+								"group-hover:underline",
+								layoutWhite && "text-c-black"
+							)}>
+							{linkText}
+						</span>
+						<span className="inline-block">
+							<HomeArrowIcon color={!layoutWhite} />
+						</span>
+					</Link>
+				) : (
+					<a
+						href={linkURL}
+						target="_blank"
+						rel="noopener"
+						className="flex items-center py-4 space-x-6 text-xs font-bold tracking-widest uppercase group">
+						<span
+							className={clsx(
+								"group-hover:underline",
+								layoutWhite && "text-c-black"
+							)}>
+							{linkText}
+						</span>
+						<span className="inline-block">
+							<HomeArrowIcon color={!layoutWhite} />
+						</span>
+					</a>
+				)}
 			</div>
 		</div>
 	);

@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import clsx from "clsx";
 
 const PriceCard = ({
 	title,
 	description,
+	linkMonthly,
+	linkYearly,
 	priceMonthly,
 	priceYearly,
 	tagMonthly,
@@ -15,13 +16,20 @@ const PriceCard = ({
 }: {
 	title: string;
 	description: string;
+	linkMonthly: string;
+	linkYearly: string;
 	priceMonthly: string;
-	priceYearly?: string;
+	priceYearly: string;
 	tagMonthly: string;
 	tagYearly: string;
 	layoutIsHighlighted: boolean;
 	isPriceYearly: boolean;
 }) => {
+	let link;
+	const linkConstructor: string = !isPriceYearly
+		? (link = linkMonthly)
+		: (link = linkYearly);
+
 	return (
 		<div
 			className={clsx(
@@ -48,7 +56,9 @@ const PriceCard = ({
 				</div>
 			</div>
 			<a
-				href="#"
+				href={link}
+				target="_blank"
+				rel="noopener"
 				className={clsx(
 					"w-full p-3 font-bold tracking-widest text-center uppercase transition-colors  md:w-1/2 lg:w-full ",
 					layoutIsHighlighted &&

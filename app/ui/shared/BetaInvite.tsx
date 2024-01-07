@@ -35,7 +35,9 @@ const BetaInvite = ({
 						{data.mainText}
 					</p>
 					<a
-						href="#"
+						href="https://example.com/photosnap/invite"
+						target="_blank"
+						rel="noopener"
 						className="flex items-center space-x-6 text-xs font-bold tracking-widest uppercase group">
 						<span className="group-hover:underline">{data.linkText}</span>
 						<span className="inline-block">

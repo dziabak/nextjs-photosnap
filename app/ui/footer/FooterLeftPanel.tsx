@@ -2,7 +2,9 @@ const FooterLeftPanel = () => {
 	return (
 		<div className="mt-16 text-center md:mt-0 md:flex md:flex-col md:h-[156px] lg:h-[120px] md:justify-between md:text-right lg:w-1/3">
 			<a
-				href="#"
+				href="https://example.com/photosnap/invite"
+				target="_blank"
+				rel="noopener"
 				className="flex items-center justify-center p-4 mb-4 text-xs font-bold tracking-widest uppercase md:justify-end group md:pr-0">
 				<span className="pr-6 group-hover:underline">Get an invite</span>
 				<span className="inline-block">
