@@ -1,5 +1,3 @@
-import React from "react";
-
 import NavigationLink from "./NavigationLink";
 import InviteButton from "./InviteButton";
 

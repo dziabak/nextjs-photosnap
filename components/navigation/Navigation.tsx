@@ -5,10 +5,8 @@ import { useLockedBody } from "usehooks-ts";
 
 import Logo from "./Logo";
 import InviteButton from "./InviteButton";
-
 import HamburgerButton from "./HamburgerButton";
 import NavigationMobile from "./NavigationMobile";
-
 import NavigationDesktop from "./NavigationDesktop";
 
 const Navigation = () => {
