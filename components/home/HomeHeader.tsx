@@ -1,8 +1,6 @@
-import Link from "next/link";
-
 import clsx from "clsx";
 
-import HomeArrowIcon from "./HomeArrowIcon";
+import HomeHeaderLink from "./HomeHeaderLink";
 
 const HomeHeader = ({
 	imageDesktop,
@@ -68,39 +66,13 @@ const HomeHeader = ({
 					)}>
 					{description}
 				</p>
-				{isRouterLink ? (
-					<Link
-						href={linkURL}
-						className="flex items-center py-4 space-x-6 text-xs font-bold tracking-widest uppercase group">
-						<span
-							className={clsx(
-								"group-hover:underline",
-								layoutWhite && "text-c-black"
-							)}>
-							{linkText}
-						</span>
-						<span className="inline-block">
-							<HomeArrowIcon color={!layoutWhite} />
-						</span>
-					</Link>
-				) : (
-					<a
-						href={linkURL}
-						target="_blank"
-						rel="noopener"
-						className="flex items-center py-4 space-x-6 text-xs font-bold tracking-widest uppercase group">
-						<span
-							className={clsx(
-								"group-hover:underline",
-								layoutWhite && "text-c-black"
-							)}>
-							{linkText}
-						</span>
-						<span className="inline-block">
-							<HomeArrowIcon color={!layoutWhite} />
-						</span>
-					</a>
-				)}
+
+				<HomeHeaderLink
+					isRouterLink={isRouterLink}
+					layoutWhite={layoutWhite}
+					linkText={linkText}
+					linkURL={linkURL}
+				/>
 			</div>
 		</div>
 	);
